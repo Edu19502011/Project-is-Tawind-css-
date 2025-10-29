@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#8b5cf6',
+                        accent: '#ec4899',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+    <!-- Header & Navigation -->
+    <header class="fixed w-full z-50 glass border-b border-gray-200 dark:border-gray-800">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-xl font-bold gradient-text">Eduardo</div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-primary transition-colors relative group">
+                    Home
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#about" class="hover:text-primary transition-colors relative group">
+                    About
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#skills" class="hover:text-primary transition-colors relative group">
+                    Skills
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#contact" class="hover:text-primary transition-colors relative group">
+                    Contact
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                </a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors glow">
+                    <i class="fas fa-moon dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:block"></i>
+                </button>
+                <button class="md:hidden p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-16 grid-background">
+        <div class="container mx-auto px-4 py-20 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                    Hi, I'm <span class="gradient-text">Eduardo</span>
+                </h1>
+                <h2 class="text-2xl md:text-4xl font-semibold mb-6 text-gray-700 dark:text-gray-300">
+                    Front End Developer
+                </h2>
+                <p class="text-lg mb-8 text-gray-600 dark:text-gray-400 max-w-lg">
+                    I'm a 16-year-old developer with 5 years of programming experience. 
+                    I specialize in creating beautiful, responsive websites and applications using modern web technologies.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="px-6 py-3 bg-primary text-white rounded-lg hover:bg-indigo-700 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-2xl floating">
+                        <img src="https://media.discordapp.net/attachments/1428521104816865364/1433233091937304587/567177622_1305023264254151_8246334537832241703_n.png?ex=6903f1d5&is=6902a055&hm=3c495ed48be554af242524b82167d029e53b6cbe53b6cac77e099a1cb3689b86&=&format=webp&quality=lossless" alt="Eduardo" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 bg-white dark:bg-gray-800 p-4 rounded-full shadow-lg pulse">
+                        <i class="fas fa-laptop-code text-2xl text-primary"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-100 dark:bg-gray-800 grid-background">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                <span class="gradient-text">About Me</span>
+            </h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/3">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300">
+                        <img src="https://media.discordapp.net/attachments/1428521104816865364/1428936000561876992/Gemini_Generated_Image_ctcl7wctcl7wctcl.png?ex=6903791a&is=6902279a&hm=0e755554dfcad3c9791d4c1575f02c26e2ca61cd4deb4a41c47c481683807b3a&=&format=webp&quality=lossless" alt="Eduardo" class="w-full h-96 object-cover">
+                    </div>
+                </div>
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-semibold mb-4">Who am I?</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6">
+                        I'm a 16-year-old Front End developer with backend capabilities and 5 years of programming experience. 
+                        I'm proficient in HTML, CSS, PHP, Go, Python, TypeScript, JavaScript, and Java. My journey in tech started 
+                        when I built my first website at 11, and I've been passionate about creating digital experiences ever since.
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6">
+                        I believe in writing clean, efficient code and creating intuitive user experiences. When I'm not 
+                        coding, you can find me exploring new technologies, contributing to open-source projects, or 
+                        helping other developers in online communities.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+                        <div class="flex items-center glass p-4 rounded-xl">
+                            <i class="fas fa-graduation-cap text-primary mr-3 text-2xl"></i>
+                            <div>
+                                <div class="font-semibold">Self-Taught Developer</div>
+                                <div class="text-sm text-gray-500 dark:text-gray-400">5 Years Experience</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center glass p-4 rounded-xl">
+                            <i class="fas fa-briefcase text-primary mr-3 text-2xl"></i>
+                            <div>
+                                <div class="font-semibold">Front End Specialist</div>
+                                <div class="text-sm text-gray-500 dark:text-gray-400">Full Stack Capabilities</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center glass p-4 rounded-xl">
+                            <i class="fas fa-map-marker-alt text-primary mr-3 text-2xl"></i>
+                            <div>
+                                <div class="font-semibold">Brusque, SC</div>
+                                <div class="text-sm text-gray-500 dark:text-gray-400">Available for Remote Work</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center glass p-4 rounded-xl">
+                            <i class="fas fa-envelope text-primary mr-3 text-2xl"></i>
+                            <div>
+                                <div class="font-semibold">dudu.wanka@gmail.com</div>
+                                <div class="text-sm text-gray-500 dark:text-gray-400">Always Responds</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 grid-background">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                <span class="gradient-text">My Skills & Experience</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- HTML/CSS Experience -->
+                <div class="skill-card glass rounded-2xl p-6 shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-lg bg-red-500 flex items-center justify-center mr-4">
+                            <i class="fab fa-html5 text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">HTML & CSS</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        5+ years of experience creating responsive, accessible websites with modern CSS techniques.
+                    </p>
+                    <div class="mb-4">
+                        <h4 class="font-semibold mb-2">Key Projects:</h4>
+                        <ul class="list-disc pl-5 text-gray-600 dark:text-gray-300 space-y-1">
+                            <li>Responsive e-commerce websites</li>
+                            <li>CSS animations for marketing pages</li>
+                            <li>Accessible web application interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 rounded-full text-sm">Tailwind CSS</span>
+                        <span class="px-3 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 rounded-full text-sm">SASS</span>
+                        <span class="px-3 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 rounded-full text-sm">Responsive Design</span>
+                    </div>
+                </div>
+
+                <!-- JavaScript Experience -->
+                <div class="skill-card glass rounded-2xl p-6 shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-lg bg-yellow-500 flex items-center justify-center mr-4">
+                            <i class="fab fa-js text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">JavaScript & TypeScript</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        4+ years building interactive web applications with modern ES6+ and TypeScript.
+                    </p>
+                    <div class="mb-4">
+                        <h4 class="font-semibold mb-2">Key Projects:</h4>
+                        <ul class="list-disc pl-5 text-gray-600 dark:text-gray-300 space-y-1">
+                            <li>Single page applications with React</li>
+                            <li>Node.js backend services</li>
+                            <li>Interactive dashboards with D3.js</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded-full text-sm">ES6+</span>
+                        <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded-full text-sm">TypeScript</span>
+                        <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded-full text-sm">Node.js</span>
+                    </div>
+                </div>
+
+                <!-- Backend Experience -->
+                <div class="skill-card glass rounded-2xl p-6 shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-lg bg-green-500 flex items-center justify-center mr-4">
+                            <i class="fas fa-server text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Backend Development</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        3+ years building REST APIs and backend services with multiple technologies.
+                    </p>
+                    <div class="mb-4">
+                        <h4 class="font-semibold mb-2">Key Projects:</h4>
+                        <ul class="list-disc pl-5 text-gray-600 dark:text-gray-300 space-y-1">
+                            <li>PHP APIs for e-commerce platforms</li>
+                            <li>Go microservices for data processing</li>
+                            <li>Python scripts for automation</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">PHP</span>
+                        <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">Go</span>
+                        <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">Python</span>
+                    </div>
+                </div>
+
+                <!-- Java Experience -->
+                <div class="skill-card glass rounded-2xl p-6 shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-lg bg-orange-500 flex items-center justify-center mr-4">
+                            <i class="fab fa-java text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Java</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        2+ years developing applications and understanding object-oriented programming.
+                    </p>
+                    <div class="mb-4">
+                        <h4 class="font-semibold mb-2">Key Projects:</h4>
+                        <ul class="list-disc pl-5 text-gray-600 dark:text-gray-300 space-y-1">
+                            <li>Desktop applications with JavaFX</li>
+                            <li>Android apps development</li>
+                            <li>Data structures and algorithms</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 rounded-full text-sm">JavaFX</span>
+                        <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 rounded-full text-sm">Spring</span>
+                        <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 rounded-full text-sm">Android</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 grid-background">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                <span class="gradient-text">Get In Touch</span>
+            </h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="glass rounded-2xl shadow-xl p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-6">Let's talk about everything!</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-8">
+                                Have a project in mind or want to discuss potential opportunities? Feel free to reach out!
+                            </p>
+                            <div class="space-y-4">
+                                <div class="flex items-center">
+                                    <div class="p-3 rounded-full bg-primary text-white mr-4">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold">Email</h4>
+                                        <p class="text-gray-600 dark:text-gray-400">dudu.wanka@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="p-3 rounded-full bg-primary text-white mr-4">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold">Phone</h4>
+                                        <p class="text-gray-600 dark:text-gray-400">+55 47 9962-9433</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="p-3 rounded-full bg-primary text-white mr-4">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold">Location</h4>
+                                        <p class="text-gray-600 dark:text-gray-400">Brusque, SC</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex space-x-4 mt-8">
+                                <a href="#" class="p-3 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-primary hover:text-white transition-colors">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="p-3 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-primary hover:text-white transition-colors">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="p-3 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-primary hover:text-white transition-colors">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="p-3 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-primary hover:text-white transition-colors">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <form class="contact-form space-y-6">
+                                <div>
+                                    <label for="name" class="block mb-2 font-medium">Your Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-transparent focus:outline-none focus:ring-2 focus:ring-primary">
+                                </div>
+                                <div>
+                                    <label for="email" class="block mb-2 font-medium">Email Address</label>
+                                    <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-transparent focus:outline-none focus:ring-2 focus:ring-primary">
+                                </div>
+                                <div>
+                                    <label for="subject" class="block mb-2 font-medium">Subject</label>
+                                    <input type="text" id="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-transparent focus:outline-none focus:ring-2 focus:ring-primary">
+                                </div>
+                                <div>
+                                    <label for="message" class="block mb-2 font-medium">Message</label>
+                                    <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-transparent focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                                </div>
+                                <button type="submit" class="w-full px-6 py-3 bg-primary text-white rounded-lg hover:bg-indigo-700 transition-colors shadow-lg">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-gray-200 dark:border-gray-800">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-600 dark:text-gray-400">
+                © 2025 Developer Portfolio. All rights reserved.
+            </p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Privacy Policy</a>
+                <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Terms of Service</a>
+                <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
